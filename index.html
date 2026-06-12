@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pizzería con las mejores pizzas artesanales">
+    <meta name="keywords" content="pizza, pizzeria, comida italiana">
+
+    <title>Pizza hornny</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Pizza hornny</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Las mejores pizzas de la ciudad de Italia Zuisa</h1>
+            <p>Disfruta tu y tu familia sabores únicos, espectaculares y sobretodo locos sabores de !!!Nuestra pizzeria¡¡¡ 
+            no te lo poerdas solo aqui en la carrera Carrera 7a # 15 - 91.</p>
+            <button class="btn btn-warning mt-3" data-bs-toggle="modal" data-bs-target="#registro">
+                Registrarse
+            </button>
+        </div>
+    </section>
+
+    <section class="container my-5">
+
+        <h2 class="text-center mb-4">Nuestras Pizzas</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2025/10/EXPS_PPMBZ24_245369_DR_11_07_12bC.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Pepperoni</h5>
+                        <p class="card-text">Extra queso y pepperoni.</p>
+                        <a href="#" class="btn btn-dark">Ordenar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0191/9978/files/Pizza_al_pesto.png?v=1738749950" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Hawaiana</h5>
+                        <p class="card-text">Jamón y piña especial.</p>
+                        <a href="#" class="btn btn-dark">Ordenar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn0.recetasgratis.net/es/posts/2/1/2/pizza_mexicana_7212_1200.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Especial</h5>
+                        <p class="card-text">Ingredientes artesanales.</p>
+                        <a href="#" class="btn btn-dark">Ordenar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="modal fade" id="registro">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Registro</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="formulario">
+
+                        <input type="text" id="nombre" class="form-control mb-3" placeholder="Nombre">
+
+                        <input type="email" id="correo" class="form-control mb-3" placeholder="Correo">
+
+                        <input type="password" id="clave" class="form-control mb-3" placeholder="Contraseña">
+
+                        <button class="btn btn-dark w-100">
+                            Guardar
+                        </button>
+
+                    </form>
+
+                    <p id="mensaje" class="text-danger mt-2"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
